@@ -22,8 +22,19 @@ const Home: NextPage = () => {
         <main>
           <div className="grid md:grid-cols-2 pt-14">
             <div className="col-span-1">
-              <div className="pt-24 text-7xl antialiased"><span className="font-extrabold text-[#CD0BC1]">Entrepreneur, developer</span> & <span className="font-bold">designer</span></div>
-              <div className="pt-2 text-2xl antialiased">Based in Kyoto, Japan</div>
+              <div className="pt-24 font-cursive text-[48px] antialiased">Entrepreneur <span className="font-extrabold text-[#CD0BC1]">developer</span> designer</div>
+              <div className="pt-2 font-cursive text-[16px] text-zinc-500 antialiased">Based in Kyoto,Japan</div>
+
+              <div className="pt-6">
+                <button className="btn hover:-translate-y-0.5 hover:scale-105 hover:bg-zinc-700 hover:border-zinc-700 duration-150">
+                  Works
+                </button>
+                <button className="ml-2 btn-secondary hover:-translate-y-0.5 ">
+                  Contact
+                </button>
+
+              </div>
+
             </div>
             <div className="col-span-1 h-[500px]">
               <Canvas linear dpr={[1, 2]} camera={{ fov: 33 }}>

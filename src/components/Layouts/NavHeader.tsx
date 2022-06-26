@@ -12,29 +12,24 @@ const NavHeader = ({ children }: Props) => (
         <div className="flex pt-14 pb-14">
           <div className="flex-1 hover:brightness-125">
             <Link href="/">
-              <a>
-                <img
-                  src="/nathanlands.svg"
-                  width={160}
-                  height={20}
-                  alt="Nathan Lands"
-                />
-              </a>
+              <div className="font-cursive text-[16px] antialiased">
+                NATHAN_LANDS
+              </div>
             </Link>
           </div>
 
           <div className="block md:hidden">Hamburger</div>
 
-          <div className="hidden md:block">
+          <div className="hidden md:block font-cursive">
             <ul className="flex mr-4">
               <li className="mr-8 text-zinc-400 hover:text-zinc-100">
-                <Link href="about">about</Link>
+                <Link href="about">.about()</Link>
               </li>
               <li className="mr-8 text-zinc-400 hover:text-zinc-100">
-                <Link href="works">works</Link>
+                <Link href="works">.works()</Link>
               </li>
               <li className="mr-8 text-zinc-400 hover:text-zinc-100">
-                <a href="mailto:nathan@lore.com">contact</a>
+                <a href="mailto:nathan@lore.com">.contact()</a>
               </li>
             </ul>
           </div>

@@ -5,7 +5,7 @@ module.exports = {
       sans: [
         '"Inter", -apple-system,BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif',
       ],
+      cursive: ['"Press Start 2P", cursive'],
     },
   },
-  plugins: [require('@tailwindcss/typography')],
 };

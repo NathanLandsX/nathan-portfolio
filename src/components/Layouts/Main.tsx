@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react'
 import Head from 'next/head'
-import NavBar from './NavBar'
+import NavHeader from './NavHeader'
 import Footer from './Footer'
 
 type Props = {
@@ -28,7 +28,7 @@ const Layout = ({ children }: Props) => (
   //       <meta property="og:image" content="https://www.craftz.dog/card.png" />
     </Head>
 
-    <NavBar />
+    <NavHeader />
     {children}
 
     <Footer />

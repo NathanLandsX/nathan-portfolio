@@ -6,7 +6,7 @@ type Props = {
 }
 
 const NavHeader = ({ children }: Props) => (
-  <div>
+  <div className="sticky top-0 z-50 bg-[#0C0F1E] bg-opacity-95">
     <header>
       <nav>
         <div className="flex pt-14 pb-14">

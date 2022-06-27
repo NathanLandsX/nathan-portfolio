@@ -7,6 +7,7 @@
     "type-check": "tsc"
   },
   "dependencies": {
+    "@bradgarropy/use-countdown": "^1.5.1",
     "@react-three/drei": "^9.14.3",
     "@react-three/fiber": "^8.0.27",
     "framer-motion": "^6.3.15",

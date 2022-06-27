@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import React, { Suspense } from 'react'
 import { NextPage } from 'next'
 import Layout from "../components/Layouts/Content"
@@ -26,19 +27,26 @@ const Home: NextPage = () => {
               <div className="pt-2 font-cursive text-[16px] text-zinc-500 antialiased">Based in Kyoto,Japan</div>
 
               <div className="pt-6">
-                <button className="btn hover:-translate-y-0.5 hover:scale-105 hover:bg-zinc-700 hover:border-zinc-700 duration-150">
-                  Works
-                </button>
-                <button className="ml-2 btn-secondary hover:-translate-y-0.5 ">
-                  Contact
-                </button>
-
+                <Link href="/works">
+                  <a>
+                    <button className="btn">
+                      Works
+                    </button>
+                  </a>
+                </Link>
+                <Link href="mailto:nathan@lore.com">
+                  <a>
+                    <button className="ml-2 btn-secondary">
+                      Contact
+                    </button>
+                  </a>
+                </Link>
               </div>
 
             </div>
             <div className="col-span-1 h-[500px]">
               <Canvas linear dpr={[1, 2]} camera={{ fov: 33 }}>
-                <ambientLight intensity={3} />
+                <ambientLight intensity={2} />
                 <directionalLight position={[0, 0, 30]} intensity={10} color={0xCD0BC1} />
                 <directionalLight position={[10, 10, 0]} intensity={5} color={0x0EEBE2} />
                 <Suspense fallback={null}>

@@ -15,7 +15,7 @@ const About: NextPage = () => {
       </Head>
       <Layout>
         <main>
-          <div className="text-9xl"> about page </div>
+          <div className="text-9xl font-cursive"> about page </div>
         </main>
       </Layout>
     </div>

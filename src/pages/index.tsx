@@ -5,7 +5,7 @@ import { NextPage } from 'next'
 import Layout from "../components/Layouts/Content"
 import { Scene } from "../components/Scene"
 import { Canvas } from "@react-three/fiber"
-import { OrbitControls } from '@react-three/drei'
+import { OrbitControls, Reflector } from '@react-three/drei'
 import { motion } from 'framer-motion'
 import { useRouter } from 'next/router'
 
@@ -64,9 +64,10 @@ const Home: NextPage = () => {
 
             </div>
             <div className="col-span-1 h-[300px] md:h-[500px]">
-              <Canvas linear dpr={[1, 2]} camera={{ fov: 33 }}>
+              <Canvas linear camera={{ fov: 33 }}>
+                <pointLight position={[10, 10, 10]} />
                 <ambientLight intensity={2} />
-                <directionalLight position={[0, 0, 30]} intensity={10} color={0xCD0BC1} />
+                <directionalLight position={[10, 10, 30]} intensity={10} color={0xCD0BC1} />
                 <directionalLight position={[10, 10, 0]} intensity={5} color={0x0EEBE2} />
                 <Suspense fallback={null}>
                   <Scene />
@@ -77,26 +78,41 @@ const Home: NextPage = () => {
           </div>
 
           <div className="my-48 border-spacing-x-3 border-2 border-atari-blue h-[500px]">
-            Test
+            <div className="flex-auto h-96">
+              <div className="flex flex-col items-center pt-12 font-cursive text-[40px]">
+                // Social Proof
+                <div className="flex flex-col text-left max-w-3xl flex-wrap pt-12 font-mono text-xl">
+                  <ul className="list-none">
+                    <li className="pb-4"> <span className="text-punk-red">Sold 2 Silicon Valley startups</span>(Gamify, Binded).</li>
+                    <li className="pb-4"> <span className="text-punk-blue">Raised money from top investors</span> including Taizo Son, Asahi Shimbun, and Scott & Cyan Banister.</li>
+                    <li> <span className="text-punk-yellow">Early bitcon investor</span>. Referenced in the first major book on crypto, <span className="italic">The Age of Cryptocurrency</span>.</li>
+                  </ul>
+                </div>
+                <div className="pt-12">
+                  <span className="font-cursive text-zinc-500 text-xl">// TODO: Add More Stuff</span>
+                </div>
+
+              </div>
+            </div>
           </div>
 
-          <div className="py-48">
+          <div>
             <motion.div
               initial={{ opacity: 0, y: -100 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
               <div className="grid md:grid-cols-3">
-                <div className="col-span-1">
+                <div className="col-span-1 pt-36">
                   <img src="/nathan-pixel.png" onMouseOver={e => (e.currentTarget.src = "/nathan.jpg")} onMouseOut={e => (e.currentTarget.src = "/nathan-pixel.png")} width="250" height="250" alt="Nathan Lands" className="rounded-full hover:grayscale-0" />
                 </div>
                 <div className="col-span-2">
                   <div className="pt-24 font-cursive font-bold text-[48px] antialiased">Hi, I'm Nathan</div>
                   <div className="pt-2 font-mono text-3xl antialiased">I'm passionate about creating simple and fun products that make the world a better place.
                   </div>
-                  <div className="pt-2 font-sans max-w-md text-zinc-500 antialiased">                     I’ve survived a tornado in Alabama, acted in Taiwan, started startups in Silicon Valley and even sat on the director’s chair at a major Disney movie in New Zealand.
+                  <div className="pt-6 font-mono text-atari-blue text-xl antialiased"> I’ve survived a tornado in Alabama, acted in Taiwan, started startups in Silicon Valley and even sat on the director’s chair at a major Disney movie in New Zealand.
                   </div>
-                  <div className="mt-2">
+                  <div className="mt-6">
                     <Link href="/about">
                       <a>
                         <motion.button

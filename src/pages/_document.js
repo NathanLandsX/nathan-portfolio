@@ -6,10 +6,10 @@ export default function Document() {
       <Head>
         <link rel="icon" href="/favicons/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Press+Start+2P&display=swap" rel="stylesheet" />
       </Head>
-      <body className="container max-w-[1080px] mx-auto p-4 bg-[#0C0F1E] text-[#F3F0E1]">
+      <body className="container max-w-[1080px] mx-auto p-4 bg-atari-black text-atari-cream">
         <Main />
         <NextScript />
       </body>

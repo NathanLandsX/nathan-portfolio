@@ -9,6 +9,9 @@ const NavHeader = ({ children }: Props) => (
   <div className="sticky top-0 z-50 bg-[#0C0F1E] bg-opacity-95">
     <header>
       <nav>
+        <div className="flex bg-atari-red justify-between items-center px-4 py-2">
+          WARNING: Work in progress. Playing with animations.
+        </div>
         <div className="flex pt-14 pb-14">
           <div className="flex-1 hover:brightness-125">
             <Link href="/">
@@ -28,7 +31,7 @@ const NavHeader = ({ children }: Props) => (
               <li className="mr-8 text-zinc-400 hover:text-zinc-100">
                 <Link href="works">.works()</Link>
               </li>
-              <li className="mr-8 text-zinc-400 hover:text-zinc-100">
+              <li className="text-zinc-400 hover:text-zinc-100">
                 <a href="mailto:nathan@lore.com">.contact()</a>
               </li>
             </ul>

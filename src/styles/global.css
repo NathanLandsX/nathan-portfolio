@@ -3,10 +3,9 @@
 @tailwind utilities;
 
 .btn {
-	@apply border-2 antialiased transition ease-in-out delay-150 duration-150 hover:border-zinc-700 rounded-sm text-base px-5 py-2.5 mr-2 mb-2 border-zinc-800 focus:outline-none;
+	@apply border-2 antialiased hover:border-zinc-700 rounded-sm text-base px-5 py-2.5 mr-2 mb-2 border-zinc-800 focus:outline-none;
 }
 
-/* hover:-translate-y-0.5 hover:scale-105  */
 .btn-secondary {
 	@apply btn !border-white hover:text-[#0EEBE2] hover:!border-[#0EEBE2];
 }

@@ -3,23 +3,21 @@ import { NextPage } from 'next';
 import Layout from "../components/Layouts/Content"
 import { Canvas } from '@react-three/fiber';
 import { Stage, Stars, OrbitControls } from '@react-three/drei';
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
 
 const Reboot: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Reboot Nathan Lands</title>
+        <title>Reboot</title>
         <meta
           name="description"
-          content="All Reboot my life."
+          content="Reboot"
         />
       </Head>
       <Layout>
         <main>
           <div className="font-cursive text-[40px]">
-            Universe rebooting in 10 seconds...
+            Universe rebooting in 10 seconds... <span className="text-atari-red">don't panic</span>.
           </div>
           <div className="h-[1000px]">
             <Canvas>

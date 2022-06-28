@@ -14,6 +14,7 @@ module.exports = {
         'punk-blue': '#0EEBE2',
         'punk-red': '#F24568',
         'punk-yellow': '#F2D750',
+        'punk-purple': '#6E5DF4',
         'atari-blue': '#ADCCE3',
         'atari-black': '#0C0F1E',
         'atari-cream': '#F3F0E1',

@@ -41,24 +41,20 @@ const Home: NextPage = () => {
 
               <div className="pt-6">
                 <Link href="/works">
-                  <a>
-                    <motion.button
-                      whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 0.9 }}
-                      className="btn">
-                      View Works
-                    </motion.button>
-                  </a>
+                  <motion.button
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    className="btn">
+                    View Works
+                  </motion.button>
                 </Link>
                 <Link href="mailto:nathan@lore.com">
-                  <a>
-                    <motion.button
-                      whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 0.9 }}
-                      className="ml-2 btn-secondary">
-                      Contact
-                    </motion.button>
-                  </a>
+                  <motion.button
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    className="ml-2 btn-secondary">
+                    Contact
+                  </motion.button>
                 </Link>
               </div>
 
@@ -77,15 +73,16 @@ const Home: NextPage = () => {
             </div>
           </div>
 
-          <div className="my-24 border-spacing-x-3 border-2 border-atari-blue h-[500px]">
+          <div className="my-32 border-spacing-x-3 border-2 border-atari-blue h-[500px]">
             <div className="flex-auto h-96">
               <div className="flex flex-col items-center pt-12 font-cursive text-[40px]">
                 // Social Proof
                 <div className="flex flex-col text-left max-w-3xl flex-wrap pt-12 font-mono text-xl">
                   <ul className="list-none">
+                    <li className="pb-4 text-punk-purple">Coined the term gamify.</li>
                     <li className="pb-4"> <span className="text-punk-red">Sold 2 Silicon Valley startups</span>(Gamify, Binded).</li>
                     <li className="pb-4"> <span className="text-punk-blue">Raised money from top investors</span> including Taizo Son, Asahi Shimbun, and Scott & Cyan Banister.</li>
-                    <li> <span className="text-punk-yellow">Early bitcon investor</span>. Referenced in the first major book on crypto, <span className="italic">The Age of Cryptocurrency</span>.</li>
+                    <li> <span className="text-punk-yellow">Early bitcoin investor</span>. Referenced in the first major book on crypto, <span className="italic">The Age of Cryptocurrency</span>.</li>
                   </ul>
                 </div>
                 <div className="pt-12">
@@ -114,14 +111,12 @@ const Home: NextPage = () => {
                   </div>
                   <div className="mt-6">
                     <Link href="/about">
-                      <a>
-                        <motion.button
-                          whileHover={{ scale: 1.1 }}
-                          whileTap={{ scale: 0.9 }}
-                          className="btn-secondary">
-                          Read My Story
-                        </motion.button>
-                      </a>
+                      <motion.button
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
+                        className="btn-secondary">
+                        Read My Story
+                      </motion.button>
                     </Link>
 
                   </div>
@@ -131,8 +126,31 @@ const Home: NextPage = () => {
           </div>
 
           <div className="py-48">
-            <div className="text-xl text-atari-blue">
-              I'm currently working on building Lore.com, and taking on occasional contract work. Most recently I partnered with Barrie Osborne(exec producer Lord of the Rings, The Matrix) in an attempt to create a crypto-funded movie studio.
+            <div className="grid md:grid-cols-3">
+              <div className="col-span-1">
+                Project 1
+              </div>
+              <div className="col-span-1">
+                Project 2
+              </div>
+              <div className="col-span-1">
+                Project 3
+              </div>
+
+            </div>
+
+            <div className="text-xl max-w-3xl text-atari-blue">
+              I'm currently working on building Lore.com, and taking on occasional contract work for really interesting projects. Most recently I partnered with Barrie Osborne(exec producer Lord of the Rings, The Matrix) in an attempt to create a crypto-funded movie studio.
+            </div>
+            <div className="pt-4">
+              <Link href="/works">
+                <motion.button
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                  className="ml-2 btn-secondary">
+                  View Works
+                </motion.button>
+              </Link>
             </div>
           </div>
 

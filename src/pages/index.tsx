@@ -77,7 +77,7 @@ const Home: NextPage = () => {
             </div>
           </div>
 
-          <div className="my-48 border-spacing-x-3 border-2 border-atari-blue h-[500px]">
+          <div className="my-24 border-spacing-x-3 border-2 border-atari-blue h-[500px]">
             <div className="flex-auto h-96">
               <div className="flex flex-col items-center pt-12 font-cursive text-[40px]">
                 // Social Proof
@@ -110,7 +110,7 @@ const Home: NextPage = () => {
                   <div className="pt-24 font-cursive font-bold text-[48px] antialiased">Hi, I'm Nathan</div>
                   <div className="pt-2 font-mono text-3xl antialiased">I'm passionate about creating simple and fun products that make the world a better place.
                   </div>
-                  <div className="pt-6 font-mono text-atari-blue text-xl antialiased"> I’ve survived a tornado in Alabama, acted in Taiwan, started startups in Silicon Valley and even sat on the director’s chair at a major Disney movie in New Zealand.
+                  <div className="pt-6 font-mono text-atari-blue text-xl antialiased"> I’ve survived a tornado in Alabama, acted in Taiwan, started startups in Silicon Valley and even sat on the director’s chair at a major Disney film set in New Zealand.
                   </div>
                   <div className="mt-6">
                     <Link href="/about">
@@ -131,7 +131,9 @@ const Home: NextPage = () => {
           </div>
 
           <div className="py-48">
-            Works Teaser
+            <div className="text-xl text-atari-blue">
+              I'm currently working on building Lore.com, and taking on occasional contract work. Most recently I partnered with Barrie Osborne(exec producer Lord of the Rings, The Matrix) in an attempt to create a crypto-funded movie studio.
+            </div>
           </div>
 
           <div className="h-96 rounded-3xl absolute -z-10 origin-left before left-0 w-full bg-gradient-to-b from-punk-pink by-atari-red to-punk-red"></div>
@@ -147,7 +149,6 @@ const Home: NextPage = () => {
 
             </div>
           </div>
-
         </main>
       </Layout>
 

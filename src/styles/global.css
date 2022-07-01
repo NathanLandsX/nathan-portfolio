@@ -10,3 +10,39 @@
 	@apply btn !border-white hover:text-[#0EEBE2] hover:!border-[#0EEBE2];
 }
 
+.progress-icon {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 120px;
+  height: 120px;
+}
+
+/* Line color */
+.vertical-timeline::before {
+    background: #e5e7eb !important;
+    opacity: 0.1 !important
+}
+
+.vertical-timeline-element-content {
+    box-shadow: 0 0px 0 #000 !important;
+}
+
+/* Ring */
+.vertical-timeline-element-icon {
+    background: #f3F0E1 !important;
+    box-shadow: 0 0 0 0px #ADCCE3, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05) !important;
+}
+
+.vertical-timeline-element-date {
+  color: #F3F0E1 !important
+}
+        /* 'punk-pink': '#CD0BC1', */
+        /* 'punk-blue': '#0EEBE2', */
+        /* 'punk-red': '#F24568', */
+        /* 'punk-yellow': '#F2D750', */
+        /* 'punk-purple': '#6E5DF4', */
+        /* 'atari-blue': '#ADCCE3', */
+        /* 'atari-black': '#0C0F1E', */
+        /* 'atari-cream': '#F3F0E1', */
+        /* 'atari-red': '#e41b23', */

@@ -5,9 +5,11 @@ import { NextPage } from 'next'
 import Layout from "../components/Layouts/Content"
 import { Scene } from "../components/Scene"
 import { Canvas } from "@react-three/fiber"
-import { OrbitControls, Reflector } from '@react-three/drei'
+import { OrbitControls } from '@react-three/drei'
 import { motion } from 'framer-motion'
 import { useRouter } from 'next/router'
+import Image from 'next/image'
+import Contact from '../components/Contact'
 
 const Home: NextPage = () => {
 
@@ -32,7 +34,6 @@ const Home: NextPage = () => {
       </Head>
 
       <Layout>
-
         <main>
           <div className="grid md:grid-cols-2 pt-14">
             <div className="col-span-1">
@@ -64,7 +65,7 @@ const Home: NextPage = () => {
                 <pointLight position={[10, 10, 10]} />
                 <ambientLight intensity={2} />
                 <directionalLight position={[10, 10, 30]} intensity={10} color={0xCD0BC1} />
-                <directionalLight position={[10, 10, 0]} intensity={5} color={0x0EEBE2} />
+                <directionalLight position={[0, 0, 15]} intensity={5} color={0x0EEBE2} />
                 <Suspense fallback={null}>
                   <Scene />
                 </Suspense>
@@ -79,10 +80,10 @@ const Home: NextPage = () => {
                 // Social Proof
                 <div className="flex flex-col text-left max-w-3xl flex-wrap pt-12 font-mono text-xl">
                   <ul className="list-none">
-                    <li className="pb-4 text-punk-purple">Coined the term gamify.</li>
+                    <li className="pb-4"> <span className="text-punk-yellow">Early bitcoin investor</span>. Referenced in the first major book on crypto, <span className="italic">The Age of Cryptocurrency</span>.</li>
                     <li className="pb-4"> <span className="text-punk-red">Sold 2 Silicon Valley startups</span>(Gamify, Binded).</li>
                     <li className="pb-4"> <span className="text-punk-blue">Raised money from top investors</span> including Taizo Son, Asahi Shimbun, and Scott & Cyan Banister.</li>
-                    <li> <span className="text-punk-yellow">Early bitcoin investor</span>. Referenced in the first major book on crypto, <span className="italic">The Age of Cryptocurrency</span>.</li>
+                    <li className="text-punk-purple">Coined the term gamify.</li>
                   </ul>
                 </div>
                 <div className="pt-12">
@@ -93,80 +94,83 @@ const Home: NextPage = () => {
             </div>
           </div>
 
-          <div>
-            <motion.div
-              initial={{ opacity: 0, y: -100 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-            >
-              <div className="grid md:grid-cols-3">
-                <div className="col-span-1 pt-36">
-                  <img src="/nathan-pixel.png" onMouseOver={e => (e.currentTarget.src = "/nathan.jpg")} onMouseOut={e => (e.currentTarget.src = "/nathan-pixel.png")} width="250" height="250" alt="Nathan Lands" className="rounded-full hover:grayscale-0" />
-                </div>
-                <div className="col-span-2">
-                  <div className="pt-24 font-cursive font-bold text-[48px] antialiased">Hi, I'm Nathan</div>
-                  <div className="pt-2 font-mono text-3xl antialiased">I'm passionate about creating simple and fun products that make the world a better place.
-                  </div>
-                  <div className="pt-6 font-mono text-atari-blue text-xl antialiased"> I’ve survived a tornado in Alabama, acted in Taiwan, started startups in Silicon Valley and even sat on the director’s chair at a major Disney film set in New Zealand.
-                  </div>
-                  <div className="mt-6">
-                    <Link href="/about">
-                      <motion.button
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}
-                        className="btn-secondary">
-                        Read My Story
-                      </motion.button>
-                    </Link>
-
-                  </div>
-                </div>
+          <div className="grid md:grid-cols-3">
+            <div className="col-span-1 pt-36">
+              <img src="/nathan-pixel.png" onMouseOver={e => (e.currentTarget.src = "/nathan.jpg")} onMouseOut={e => (e.currentTarget.src = "/nathan-pixel.png")} width="250" height="250" alt="Nathan Lands" className="rounded-full hover:grayscale-0" />
+            </div>
+            <div className="col-span-2">
+              <div className="pt-24 font-cursive font-bold text-[40px] antialiased">Hi, I'm Nathan</div>
+              <div className="pt-2 font-mono text-2xl antialiased">I'm passionate about creating simple and fun products that make the world a better place.
               </div>
-            </motion.div>
+              <div className="pt-6 font-mono text-atari-blue text-xl antialiased"> I’ve survived a tornado in Alabama, acted in Taiwan, started startups in Silicon Valley and even sat on the director’s chair at a major Disney film set.
+              </div>
+              <div className="mt-6">
+                <Link href="/about">
+                  <motion.button
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    className="btn-secondary">
+                    Read My Story
+                  </motion.button>
+                </Link>
+
+              </div>
+            </div>
           </div>
 
           <div className="py-48">
+
+            <div className="flex flex-col items-center pt-12">
+              <div className="font-cursive text-[32px] text-antiliased">
+                A few of my <span className="text-punk-blue">projects</span>
+              </div>
+            </div>
             <div className="grid md:grid-cols-3">
               <div className="col-span-1">
-                Project 1
+                <div className="pt-24 font-mono font-bold text-2xl antialiased">
+                  <Image src="/nathan-pixel.png" width="200" height="200" alt="Nathan Lands" className="hover:grayscale-0" />
+                  <div className="font-cursive">Binded</div>
+                  <div className="font-mono text-atari-blue pr-4 text-[16px]">Copyright-protection on the blockchain. Helping artists protect their work.</div>
+                </div>
               </div>
               <div className="col-span-1">
-                Project 2
+                <div className="pt-24 font-mono font-bold text-2xl antialiased">
+                  <Image src="/nathan-pixel.png" width="200" height="200" alt="Nathan Lands" className="hover:grayscale-0" />
+                  <div className="font-cursive">Lore.com</div>
+                  <div className="font-mono text-atari-blue pr-4 text-[16px]">A stealth-mode NFT platform. </div>
+                </div>
               </div>
               <div className="col-span-1">
-                Project 3
+                <div className="pt-24 font-mono font-bold text-2xl antialiased">
+                  <Image src="/nathan-pixel.png" width="200" height="200" alt="Nathan Lands" className="hover:grayscale-0" />
+                  <div className="font-cursive">QuickCoin</div>
+                  <div className="font-mono text-atari-blue pr-4 text-[16px]">The first social bitcoin wallet.</div>
+                </div>
               </div>
 
             </div>
 
-            <div className="text-xl max-w-3xl text-atari-blue">
-              I'm currently working on building Lore.com, and taking on occasional contract work for really interesting projects. Most recently I partnered with Barrie Osborne(exec producer Lord of the Rings, The Matrix) in an attempt to create a crypto-funded movie studio.
+            <div className="flex flex-col items-center pt-4">
+              <div className="text-2xl font-mono mt-14 text-antiliased max-w-3xl">
+                I'm primarily focused on creating beautiful web apps with <span className="font-semibold text-punk-yellow">React & TypeScript</span>. I have experience in all aspects ranging from inception to successfully launching a startup, getting press and beyond.
+              </div>
+              <div className="text-xl font-mono mt-4 text-antiliased max-w-3xl text-atari-blue">
+                I'm currently working on Lore.com, and taking on occasional contract work for interesting projects.
+              </div>
+              <div className="pt-12 justify-left mx-auto">
+                <Link href="/works">
+                  <motion.button
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    className="ml-2 btn-secondary">
+                    View Works
+                  </motion.button>
+                </Link>
+              </div>
             </div>
-            <div className="pt-4">
-              <Link href="/works">
-                <motion.button
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.9 }}
-                  className="ml-2 btn-secondary">
-                  View Works
-                </motion.button>
-              </Link>
-            </div>
+
           </div>
-
-          <div className="h-96 rounded-3xl absolute -z-10 origin-left before left-0 w-full bg-gradient-to-b from-punk-pink by-atari-red to-punk-red"></div>
-          <div className="flex-auto h-96">
-            <div className="flex flex-col items-center pt-12 font-cursive text-[40px]">
-              ##Contact
-              <div className="flex flex-col text-center max-w-5xl flex-wrap pt-12 font-mono text-3xl">
-                Want to discuss collaborating on a project? Email me at <span className="font-bold pt-4 tracking-widest text-5xl text-white hover:underline"><a href="mailto:nathan@lore.com">nathan@lore.com</a></span>
-              </div>
-              <div className="pt-12">
-                <a href="https://www.twitter.com/nathanlands"><span className="text-[16px] hover:underline">Twitter</span></a>
-              </div>
-
-            </div>
-          </div>
+          < Contact />
         </main>
       </Layout>
 

@@ -7,14 +7,18 @@
     "type-check": "tsc"
   },
   "dependencies": {
-    "@bradgarropy/use-countdown": "^1.5.1",
     "@react-three/drei": "^9.14.3",
     "@react-three/fiber": "^8.0.27",
+    "eslint": "8.17.0",
+    "eslint-config-next": "12.1.6",
+    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-react-hooks": "^4.5.0",
     "framer-motion": "^6.3.15",
-    "next": "latest",
+    "next": "^12.2.0",
     "postcss": "^8.4.14",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-vertical-timeline-component": "^3.5.2",
     "three": "^0.141.0"
   },
   "devDependencies": {

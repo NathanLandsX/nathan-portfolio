@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { NextPage } from 'next'
 import Layout from "../components/Layouts/Content"
+import Contact from '../components/Contact'
 
 const Works: NextPage = () => {
   return (
@@ -16,6 +17,7 @@ const Works: NextPage = () => {
       <Layout>
         <main>
           <div className="text-9xl font-cursive"> Works</div>
+          <Contact />
         </main>
       </Layout>
 

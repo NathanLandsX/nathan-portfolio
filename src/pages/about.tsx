@@ -60,8 +60,9 @@ const About: NextPage = () => {
               date="1994"
               contentStyle={{ background: '#F3F0E1', color: '#0C0F1E' }}
               iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+              icon={<img src="/tornado.png" className="rounded-xl" alt="Work" />}
             >
-              <div className="text-2xl font-mono"> Survived a tornado. Was trapped for hours.</div>
+              <div className="text-2xl font-mono"> Survived a tornado. Was trapped for hours under rubble.</div>
             </VerticalTimelineElement>
             <VerticalTimelineElement
               className="vertical-timeline-element--work pb-12"
@@ -277,7 +278,7 @@ const About: NextPage = () => {
             <motion.path
               fill="none"
               strokeWidth="5"
-              stroke="white"
+              stroke="black"
               d="M14,26 L 22,33 L 35,16"
               initial={false}
               strokeDasharray="0 1"

@@ -96,7 +96,9 @@ const Home: NextPage = () => {
 
           <div className="grid md:grid-cols-3">
             <div className="col-span-1 pt-36">
-              <img src="/nathan-pixel.png" onMouseOver={e => (e.currentTarget.src = "/nathan.jpg")} onMouseOut={e => (e.currentTarget.src = "/nathan-pixel.png")} width="250" height="250" alt="Nathan Lands" className="rounded-full hover:grayscale-0" />
+              <Link href="/about">
+                <img src="/nathan-pixel.png" onMouseOver={e => (e.currentTarget.src = "/nathan.jpg")} onMouseOut={e => (e.currentTarget.src = "/nathan-pixel.png")} width="250" height="250" alt="Nathan Lands" className="rounded-full hover:grayscale-0" />
+              </Link>
             </div>
             <div className="col-span-2">
               <div className="pt-24 font-cursive font-bold text-[40px] antialiased">Hi, I'm Nathan</div>

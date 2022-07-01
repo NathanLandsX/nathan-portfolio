@@ -16,7 +16,7 @@ const Works: NextPage = () => {
 
       <Layout>
         <main>
-          <div className="text-9xl font-cursive"> Works</div>
+          <div className="text-7xl my-24 font-cursive"> Works</div>
           <Contact />
         </main>
       </Layout>

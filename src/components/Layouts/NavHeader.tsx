@@ -23,13 +23,13 @@ const NavHeader = ({ children }: Props) => (
           <div className="hidden md:block font-cursive">
             <ul className="flex mr-4">
               <li className="mr-8 text-zinc-400 hover:text-zinc-100">
-                <Link href="about">.about()</Link>
+                <Link href="about">about()</Link>
               </li>
               <li className="mr-8 text-zinc-400 hover:text-zinc-100">
-                <Link href="works">.works()</Link>
+                <Link href="works">works()</Link>
               </li>
               <li className="text-zinc-400 hover:text-zinc-100">
-                <a href="mailto:nathan@lore.com">.contact()</a>
+                <a href="mailto:nathan@lore.com">contact()</a>
               </li>
             </ul>
           </div>

@@ -41,7 +41,7 @@ const About: NextPage = () => {
               contentArrowStyle={{ borderRight: '7px solid #AC3049' }}
               date="1984"
               iconStyle={{ background: '#0C0F1E', color: '#fff' }}
-              icon={<img src="/nathanlands.svg" className="pt-6" alt="Work" />}
+              icon={<img src="/8bit/alabama.png" alt="Work" />}
             >
               <div className="text-2xl font-mono">
                 Born in Arab, Alabama
@@ -52,6 +52,7 @@ const About: NextPage = () => {
               date="1989"
               contentStyle={{ background: '#F3F0E1', color: '#0C0F1E' }}
               iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+              icon={<img src="/8bit/jupiter.png" alt="Work" />}
             >
               <div className="text-2xl font-mono"> Told everyone I was from Jupiter. </div>
             </VerticalTimelineElement>
@@ -60,7 +61,7 @@ const About: NextPage = () => {
               date="1994"
               contentStyle={{ background: '#F3F0E1', color: '#0C0F1E' }}
               iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-              icon={<img src="/tornado.png" className="rounded-xl" alt="Work" />}
+              icon={<img src="/8bit/tornado.png" className="rounded-xl" alt="Work" />}
             >
               <div className="text-2xl font-mono"> Survived a tornado. Was trapped for hours under rubble.</div>
             </VerticalTimelineElement>
@@ -69,6 +70,7 @@ const About: NextPage = () => {
               date="1995"
               contentStyle={{ background: '#F3F0E1', color: '#0C0F1E' }}
               iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+              icon={<img src="/8bit/computer.png" className="rounded-xl" alt="Work" />}
             >
               <div className="text-2xl font-mono"> Got my first computer. Created a chat bot in QBasic.</div>
             </VerticalTimelineElement>
@@ -77,6 +79,7 @@ const About: NextPage = () => {
               date="1999"
               contentStyle={{ background: '#0EEBE2', color: '#0C0F1E' }}
               iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+              icon={<img src="/8bit/everquest.png" alt="Work" />}
               contentArrowStyle={{ borderRight: '7px solid #0EEBE2' }}
             >
               <div className="text-2xl font-mono"> Co-ran one of the top guilds on EverQuest. Made enough money to travel.</div>
@@ -86,6 +89,7 @@ const About: NextPage = () => {
               date="2004"
               contentStyle={{ background: '#F3F0E1', color: '#0C0F1E' }}
               iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+              icon={<img src="/8bit/taiwan.png" className="rounded-xl" alt="Work" />}
             >
               <div className="text-2xl font-mono"> Traveled to Taiwan. Studied Mandarin, taught English and acted in TV commercials. </div>
             </VerticalTimelineElement>
@@ -94,14 +98,16 @@ const About: NextPage = () => {
               date="2007"
               contentStyle={{ background: '#F3F0E1', color: '#0C0F1E' }}
               iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+              icon={<img src="/8bit/florida.png" className="rounded-xl" alt="Work" />}
             >
-              <div className="text-2xl font-mono"> Created a real-estate business in Tampa, FL. Managed 140 condos + had a kiosk in a mall.</div>
+              <div className="text-2xl font-mono"> Created a real-estate business in Florida. Managed 140 condos + had a kiosk in a mall.</div>
             </VerticalTimelineElement>
             <VerticalTimelineElement
               className="vertical-timeline-element--work pb-12"
               date="2008"
               contentStyle={{ background: '#F3F0E1', color: '#0C0F1E' }}
               iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+              icon={<img src="/8bit/gamestreamer.png" className="rounded-full" alt="Work" />}
             >
               <div className="text-2xl font-mono pb-6"> Founded GameStreamer, a "Steam Killer". Raised $10M and had 30+ employees.</div>
               <Link href="https://www.gamestreamer.com">
@@ -126,14 +132,16 @@ const About: NextPage = () => {
               date="2010"
               contentStyle={{ background: '#F3F0E1', color: '#0C0F1E' }}
               iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+              icon={<img src="/8bit/gaikai.png" className="rounded-xl" alt="Work" />}
             >
-              <div className="text-2xl font-mono pb-6"> Advised several startups including Gaikai(acq. for $380M). Mentored for 20under20.</div>
+              <div className="text-2xl font-mono pb-6"> Advised several startups including Gaikai(acq. for $380M) and OverWolf. Mentored for 20under20.</div>
             </VerticalTimelineElement>
             <VerticalTimelineElement
               className="vertical-timeline-element--work pb-12"
               date="2011"
               contentStyle={{ background: '#F3F0E1', color: '#0C0F1E' }}
               iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+              icon={<img src="/8bit/gamify.png" className="rounded-xl" alt="Work" />}
             >
               <div className="text-2xl pb-6 font-mono"> Founded Gamify. Sold Gamification.org to Badgeville.</div>
               <Link href="https://www.gamify.com">
@@ -158,6 +166,7 @@ const About: NextPage = () => {
               date="2012"
               contentStyle={{ background: '#F3F0E1', color: '#0C0F1E' }}
               iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+              icon={<img src="/8bit/ramen.png" className="rounded-xl" alt="Work" />}
             >
               <div className="text-2xl font-mono"> Co-owned Ramen Underground. At one time was top 3 ramen in San Francisco.</div>
             </VerticalTimelineElement>
@@ -166,6 +175,7 @@ const About: NextPage = () => {
               date="2012"
               contentStyle={{ background: '#0EEBE2', color: '#0C0F1E' }}
               iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+              icon={<img src="/8bit/bitcoin.png" alt="Work" />}
             >
               <div className="text-2xl font-mono"> Bought my first bitcoin with the help of Erik Voorhees. </div>
             </VerticalTimelineElement>
@@ -174,6 +184,7 @@ const About: NextPage = () => {
               date="2013"
               contentStyle={{ background: '#F3F0E1', color: '#0C0F1E' }}
               iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+              icon={<img src="/8bit/noah.png" className="rounded-xl" alt="Work" />}
             >
               <div className="text-2xl font-mono"> My son Noah was born. Best day of my life.</div>
             </VerticalTimelineElement>
@@ -182,6 +193,7 @@ const About: NextPage = () => {
               date="2013"
               contentStyle={{ background: '#F3F0E1', color: '#0C0F1E' }}
               iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+              icon={<img src="/8bit/quickcoin.png" className="rounded-xl" alt="Work" />}
             >
               <div className="text-2xl font-mono"> Co-created QuickCoin the first social bitcoin wallet. </div>
             </VerticalTimelineElement>
@@ -190,6 +202,7 @@ const About: NextPage = () => {
               date="2014"
               contentStyle={{ background: '#F3F0E1', color: '#0C0F1E' }}
               iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+              icon={<img src="/8bit/blockai.png" className="rounded-xl" alt="Work" />}
             >
               <div className="text-2xl font-mono"> QuickCoin became Blockai. We ran lots of fun experiments with crypto.</div>
             </VerticalTimelineElement>
@@ -198,6 +211,7 @@ const About: NextPage = () => {
               date="2016"
               contentStyle={{ background: '#F3F0E1', color: '#0C0F1E' }}
               iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+              icon={<img src="/8bit/binded.png" className="rounded-xl" alt="Work" />}
             >
               <div className="text-2xl pb-6 font-mono"> Blockai became Binded, a platform to help artists protect their copyright. Sold to Pixsy.</div>
               <Link href="https://www.binded.com">
@@ -223,6 +237,7 @@ const About: NextPage = () => {
               date="2019"
               contentStyle={{ background: '#0EEBE2', color: '#0C0F1E' }}
               iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+              icon={<img src="/8bit/mulan.png" alt="Work" />}
             >
               <div className="text-2xl font-mono pb-6"> Founded Lore, a "crypto-fueled" movie-studio, with Barrie Osborne(The Matrix, Lord of the Rings). Failed to raise our goal of $100M. </div>
               <Link href="https://web.archive.org/web/20191216040544/https://www.lore.com/">
@@ -247,6 +262,7 @@ const About: NextPage = () => {
               date="2020"
               contentStyle={{ background: '#F3F0E1', color: '#0C0F1E' }}
               iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+              icon={<img src="/8bit/cabin.png" className="rounded-xl" alt="Work" />}
             >
               <div className="text-2xl pb-6 font-mono"> Stayed in a cabin for most of the pandemic. Began seriously learning to code. Previously I had partnered with more technical founders.</div>
             </VerticalTimelineElement>
@@ -255,6 +271,7 @@ const About: NextPage = () => {
               date="2022"
               contentStyle={{ background: '#F3F0E1', color: '#0C0F1E' }}
               iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+              icon={<img src="/8bit/kyoto.png" className="rounded-xl" alt="Work" />}
             >
               <div className="text-2xl pb-6 font-mono"> Moved to Kyoto, Japan. Currently focused on Lore.com and contracting to improve my coding skills.</div>
             </VerticalTimelineElement>

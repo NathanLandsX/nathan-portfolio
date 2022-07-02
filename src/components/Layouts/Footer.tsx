@@ -9,21 +9,21 @@ const Footer = () => {
             <div className="flex-1 pr-4">
               <Link href="/about">
                 <a>
-                  <span className="font-cursive text-zinc-400 hover:text-zinc-100">.about()</span>
+                  <span className="font-cursive text-zinc-400 hover:text-zinc-100">about()</span>
                 </a>
               </Link>
             </div>
             <div className="flex-1 px-4">
               <Link href="/works">
                 <a>
-                  <span className="font-cursive text-zinc-400 hover:text-zinc-100">.works()</span>
+                  <span className="font-cursive text-zinc-400 hover:text-zinc-100">works()</span>
                 </a>
               </Link>
             </div>
             <div className="flex-1 pl-4">
               <Link href="mailto:nathan@lore.com">
                 <a>
-                  <span className="font-cursive text-zinc-400 hover:text-zinc-100">.contact()</span>
+                  <span className="font-cursive text-zinc-400 hover:text-zinc-100">contact()</span>
                 </a>
               </Link>
             </div>

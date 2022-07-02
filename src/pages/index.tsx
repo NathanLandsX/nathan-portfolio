@@ -8,7 +8,6 @@ import { Canvas } from "@react-three/fiber"
 import { OrbitControls } from '@react-three/drei'
 import { motion } from 'framer-motion'
 import { useRouter } from 'next/router'
-import Image from 'next/image'
 import Contact from '../components/Contact'
 
 const Home: NextPage = () => {
@@ -130,22 +129,22 @@ const Home: NextPage = () => {
             <div className="grid md:grid-cols-3">
               <div className="col-span-1">
                 <div className="pt-24 font-mono font-bold text-2xl antialiased">
-                  <Image src="/nathan-pixel.png" width="200" height="200" alt="Nathan Lands" className="hover:grayscale-0" />
-                  <div className="font-cursive">Binded</div>
+                  <img src="/8bit/landing/lore.png" onMouseOver={e => (e.currentTarget.src = "/8bit/landing/lore-normal.png")} onMouseOut={e => (e.currentTarget.src = "/8bit/landing/lore.png")} width="250" height="250" alt="Nathan Lands" />
+                  <div className="pt-4 font-cursive">Binded</div>
                   <div className="font-mono text-atari-blue pr-4 text-[16px]">Copyright-protection on the blockchain. Helping artists protect their work.</div>
                 </div>
               </div>
               <div className="col-span-1">
                 <div className="pt-24 font-mono font-bold text-2xl antialiased">
-                  <Image src="/nathan-pixel.png" width="200" height="200" alt="Nathan Lands" className="hover:grayscale-0" />
-                  <div className="font-cursive">Lore.com</div>
+                  <img src="/8bit/landing/lore.png" onMouseOver={e => (e.currentTarget.src = "/8bit/landing/lore-normal.png")} onMouseOut={e => (e.currentTarget.src = "/8bit/landing/lore.png")} width="250" height="250" alt="Nathan Lands" />
+                  <div className="pt-4 font-cursive">Lore.com</div>
                   <div className="font-mono text-atari-blue pr-4 text-[16px]">A stealth-mode NFT platform. </div>
                 </div>
               </div>
               <div className="col-span-1">
                 <div className="pt-24 font-mono font-bold text-2xl antialiased">
-                  <Image src="/nathan-pixel.png" width="200" height="200" alt="Nathan Lands" className="hover:grayscale-0" />
-                  <div className="font-cursive">QuickCoin</div>
+                  <img src="/8bit/landing/lore.png" onMouseOver={e => (e.currentTarget.src = "/8bit/landing/lore-normal.png")} onMouseOut={e => (e.currentTarget.src = "/8bit/landing/lore.png")} width="250" height="250" alt="Nathan Lands" />
+                  <div className="pt-4 font-cursive">QuickCoin</div>
                   <div className="font-mono text-atari-blue pr-4 text-[16px]">The first social bitcoin wallet.</div>
                 </div>
               </div>

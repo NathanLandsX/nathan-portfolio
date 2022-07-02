@@ -91,7 +91,7 @@ const About: NextPage = () => {
               iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
               icon={<img src="/8bit/taiwan.png" className="rounded-xl" alt="Work" />}
             >
-              <div className="text-2xl font-mono"> Traveled to Taiwan. Studied Mandarin, taught English and acted in TV commercials. </div>
+              <div className="text-2xl font-mono"> Moved to Taiwan. Studied Mandarin, taught English and acted in TV commercials. </div>
             </VerticalTimelineElement>
             <VerticalTimelineElement
               className="vertical-timeline-element--work pb-12"
@@ -186,7 +186,7 @@ const About: NextPage = () => {
               iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
               icon={<img src="/8bit/noah.png" className="rounded-xl" alt="Work" />}
             >
-              <div className="text-2xl font-mono"> My son Noah was born. Best day of my life.</div>
+              <div className="text-2xl font-mono"> My son was born. Best day of my life.</div>
             </VerticalTimelineElement>
             <VerticalTimelineElement
               className="vertical-timeline-element--work pb-12"

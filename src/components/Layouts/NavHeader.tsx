@@ -9,6 +9,10 @@ const NavHeader = ({ children }: Props) => (
   <div className="sticky top-0 z-50 bg-[#0C0F1E] bg-opacity-95">
     <header>
       <nav>
+        <div className="flex jstify-center bg-atari-dark-red">
+          WARNING: Under Construction!
+        </div>
+
         <div className="flex pt-14 pb-14">
           <div className="flex-1 hover:brightness-125">
             <Link href="/">

@@ -33,7 +33,47 @@ const About: NextPage = () => {
       </Head>
       <Layout>
         <main>
-          <div className="text-7xl my-24 font-cursive"> My life</div>
+          <div className="mt-24 mb-8 grid md:grid-cols-3">
+            <div className="col-span-2 mr-8">
+              <div className="max-w-4xl text-[32px] antialiased font-cursive">My mission is to create a <span className="text-punk-blue">better future</span> for humanity.</div>
+              <div className="pt-4 antialiased max-w-3xl font-mono text-xl text-atari-blue">
+                I'm an entrepreneur with a passion for creating beautiful products that are simple and fun to use. Out of necessity I've learned to design and code to bring my ideas to life.
+              </div>
+            </div>
+            <div className="col-span-1">
+              <Link href="/about">
+                <img src="/nathan-pixel.png" onMouseOver={e => (e.currentTarget.src = "/nathan.jpg")} onMouseOut={e => (e.currentTarget.src = "/nathan-pixel.png")} width="250" height="250" alt="Nathan Lands" className="rounded-full hover:grayscale-0" />
+              </Link>
+            </div>
+          </div>
+
+          <div className="my-32 border-spacing-x-3 border-2 border-atari-blue h-[500px]">
+            <div className="flex-auto h-96">
+              <div className="flex flex-col items-center pt-12 font-cursive text-[40px]">
+                // Skills
+                <div className="flex flex-col text-left max-w-3xl flex-wrap pt-12 font-mono text-xl">
+                  <ul className="list-none">
+                    <li className="pb-4"> <span className="text-punk-yellow">Coding:</span> TypeScript, Swift, Go, Rust(basic)</li>
+                    <li className="pb-4"> <span className="text-punk-pink"> Frameworks:</span> React, Next.js, Astro, SolidJS, SwiftUI.</li>
+                    <li className="pb-4"> <span className="text-punk-red">Tools:</span> Neovim, Figma, MagicaVoxel, Photoshop, Illustrator.</li>
+                    <li className="pb-4"> <span className="text-punk-blue">Languages:</span> English, Mandarin(conversational) and Japanese(very basic).</li>
+                    <li> <span className="text-punk-purple">Startups:</span> Fundraising, Product Management, Contract Negotation, PR  </li>
+                  </ul>
+                </div>
+                <div>
+                  <span className="font-cursive text-zinc-500 text-xl">// TODO: Increase quality</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <div className="mt-24 text-[48px] antialiased font-cursive"> My life</div>
+          <div className="mt-4 mb-12">
+            <span className="font-cursive text-zinc-500"> Hopefully the first half...</span>
+          </div>
+
           <VerticalTimeline>
             <VerticalTimelineElement
               className="vertical-timeline-element--work pb-12"
@@ -295,7 +335,7 @@ const About: NextPage = () => {
             <motion.path
               fill="none"
               strokeWidth="5"
-              stroke="black"
+              stroke="white"
               d="M14,26 L 22,33 L 35,16"
               initial={false}
               strokeDasharray="0 1"

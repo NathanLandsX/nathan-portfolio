@@ -76,7 +76,7 @@ const Home: NextPage = () => {
           <div className="my-32 border-spacing-x-3 border-2 border-atari-blue h-[500px]">
             <div className="flex-auto h-96">
               <div className="flex flex-col items-center pt-12 font-cursive text-[40px]">
-                // Social Proof
+                // Social proof
                 <div className="flex flex-col text-left max-w-3xl flex-wrap pt-12 font-mono text-xl">
                   <ul className="list-none">
                     <li className="pb-4"> <span className="text-punk-yellow">Early bitcoin investor</span>. Referenced in the first major book on crypto, <span className="italic">The Age of Cryptocurrency</span>.</li>
@@ -86,7 +86,7 @@ const Home: NextPage = () => {
                   </ul>
                 </div>
                 <div className="pt-12">
-                  <span className="font-cursive text-zinc-500 text-xl">// TODO: Add More Stuff</span>
+                  <span className="font-cursive text-zinc-500 text-xl">// TODO: Add more stuff</span>
                 </div>
 
               </div>
@@ -119,7 +119,7 @@ const Home: NextPage = () => {
             </div>
           </div>
 
-          <div className="py-48">
+          <div className="pt-48">
 
             <div className="flex flex-col items-center pt-12">
               <div className="font-cursive text-[32px] text-antiliased">
@@ -148,7 +148,6 @@ const Home: NextPage = () => {
                   <div className="font-mono text-atari-blue pr-4 text-[16px]">The first social bitcoin wallet.</div>
                 </div>
               </div>
-
             </div>
 
             <div className="flex flex-col items-center pt-4">

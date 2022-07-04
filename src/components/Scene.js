@@ -11,7 +11,7 @@ export const Scene = () => {
       <Reflector
         blur={[512, 512]} // Blur ground reflections (width, heigt), 0 skips blur
         mixBlur={0.75} // How much blur mixes with surface roughness
-        mixStrength={0.25} // Strength of the reflections
+        mixStrength={1.0} // Strength of the reflections
         resolution={1024} // Off-buffer resolution, lower=faster, higher=better quality
         args={[10, 10]} // PlaneBufferGeometry arguments
         rotation={[-Math.PI * 0.5, 0, 0]}

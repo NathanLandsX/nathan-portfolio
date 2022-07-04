@@ -38,39 +38,50 @@ const Works: NextPage = () => {
               </Link>
             </div>
             <div className="col-span-1">
-              <div className="pt-24 font-mono font-bold text-2xl antialiased">
-                <img src="/8bit/landing/lore.png" onMouseOver={e => (e.currentTarget.src = "/8bit/landing/lore-normal.png")} onMouseOut={e => (e.currentTarget.src = "/8bit/landing/lore.png")} width="250" height="250" alt="Nathan Lands" />
-                <div className="pt-4 font-cursive">Lore.com</div>
-                <div className="font-mono text-atari-blue pr-4 text-[16px]">A stealth-mode NFT platform. </div>
-              </div>
+              <Link href="/works/lore">
+                <div className="pt-24 font-mono font-bold text-2xl antialiased">
+                  <img src="/8bit/landing/lore.png" onMouseOver={e => (e.currentTarget.src = "/8bit/landing/lore-normal.png")} onMouseOut={e => (e.currentTarget.src = "/8bit/landing/lore.png")} width="250" height="250" alt="Nathan Lands" />
+                  <div className="pt-4 font-cursive">Lore.com</div>
+                  <div className="font-mono text-atari-blue pr-4 text-[16px]">A stealth-mode NFT platform. </div>
+                </div>
+              </Link>
             </div>
             <div className="col-span-1">
-              <div className="pt-24 font-mono font-bold text-2xl antialiased">
-                <img src="/8bit/landing/lore.png" onMouseOver={e => (e.currentTarget.src = "/8bit/landing/lore-normal.png")} onMouseOut={e => (e.currentTarget.src = "/8bit/landing/lore.png")} width="250" height="250" alt="Nathan Lands" />
-                <div className="pt-4 font-cursive">QuickCoin</div>
-                <div className="font-mono text-atari-blue pr-4 text-[16px]">The first social bitcoin wallet.</div>
-              </div>
+
+              <Link href="/works/quickcoin">
+                <div className="pt-24 font-mono font-bold text-2xl antialiased">
+                  <img src="/8bit/landing/lore.png" onMouseOver={e => (e.currentTarget.src = "/8bit/landing/lore-normal.png")} onMouseOut={e => (e.currentTarget.src = "/8bit/landing/lore.png")} width="250" height="250" alt="Nathan Lands" />
+                  <div className="pt-4 font-cursive">QuickCoin</div>
+                  <div className="font-mono text-atari-blue pr-4 text-[16px]">The first social bitcoin wallet.</div>
+                </div>
+              </Link>
             </div>
             <div className="col-span-1">
-              <div className="pt-24 font-mono font-bold text-2xl antialiased">
-                <img src="/8bit/landing/lore.png" onMouseOver={e => (e.currentTarget.src = "/8bit/landing/lore-normal.png")} onMouseOut={e => (e.currentTarget.src = "/8bit/landing/lore.png")} width="250" height="250" alt="Nathan Lands" />
-                <div className="pt-4 font-cursive">Gamify</div>
-                <div className="font-mono text-atari-blue pr-4 text-[16px]">The first social bitcoin wallet.</div>
-              </div>
+              <Link href="/works/gamify">
+                <div className="pt-24 font-mono font-bold text-2xl antialiased">
+                  <img src="/8bit/landing/lore.png" onMouseOver={e => (e.currentTarget.src = "/8bit/landing/lore-normal.png")} onMouseOut={e => (e.currentTarget.src = "/8bit/landing/lore.png")} width="250" height="250" alt="Nathan Lands" />
+                  <div className="pt-4 font-cursive">Gamify</div>
+                  <div className="font-mono text-atari-blue pr-4 text-[16px]">The first social bitcoin wallet.</div>
+                </div>
+              </Link>
             </div>
             <div className="col-span-1">
-              <div className="pt-24 font-mono font-bold text-2xl antialiased">
-                <img src="/8bit/landing/lore.png" onMouseOver={e => (e.currentTarget.src = "/8bit/landing/lore-normal.png")} onMouseOut={e => (e.currentTarget.src = "/8bit/landing/lore.png")} width="250" height="250" alt="Nathan Lands" />
-                <div className="pt-4 font-cursive">Blockai</div>
-                <div className="font-mono text-atari-blue pr-4 text-[16px]">The first social bitcoin wallet.</div>
-              </div>
+              <Link href="/works/blockai">
+                <div className="pt-24 font-mono font-bold text-2xl antialiased">
+                  <img src="/8bit/landing/lore.png" onMouseOver={e => (e.currentTarget.src = "/8bit/landing/lore-normal.png")} onMouseOut={e => (e.currentTarget.src = "/8bit/landing/lore.png")} width="250" height="250" alt="Nathan Lands" />
+                  <div className="pt-4 font-cursive">Blockai</div>
+                  <div className="font-mono text-atari-blue pr-4 text-[16px]">The first social bitcoin wallet.</div>
+                </div>
+              </Link>
             </div>
             <div className="col-span-1">
-              <div className="pt-24 font-mono font-bold text-2xl antialiased">
-                <img src="/8bit/landing/lore.png" onMouseOver={e => (e.currentTarget.src = "/8bit/landing/lore-normal.png")} onMouseOut={e => (e.currentTarget.src = "/8bit/landing/lore.png")} width="250" height="250" alt="Nathan Lands" />
-                <div className="pt-4 font-cursive">GameStreamer</div>
-                <div className="font-mono text-atari-blue pr-4 text-[16px]">The first social bitcoin wallet.</div>
-              </div>
+              <Link href="/works/gamestreamer">
+                <div className="pt-24 font-mono font-bold text-2xl antialiased">
+                  <img src="/8bit/landing/lore.png" onMouseOver={e => (e.currentTarget.src = "/8bit/landing/lore-normal.png")} onMouseOut={e => (e.currentTarget.src = "/8bit/landing/lore.png")} width="250" height="250" alt="Nathan Lands" />
+                  <div className="pt-4 font-cursive">GameStreamer</div>
+                  <div className="font-mono text-atari-blue pr-4 text-[16px]">The first social bitcoin wallet.</div>
+                </div>
+              </Link>
             </div>
           </div>
 
@@ -81,7 +92,7 @@ const Works: NextPage = () => {
           </div>
           <div className="grid md:grid-cols-3">
             <div className="col-span-1">
-              <Link href="/works/binded">
+              <Link href="/works/movie">
                 <div className="pt-24 font-mono font-bold text-2xl antialiased">
                   <img src="/8bit/landing/lore.png" onMouseOver={e => (e.currentTarget.src = "/8bit/landing/lore-normal.png")} onMouseOut={e => (e.currentTarget.src = "/8bit/landing/lore.png")} width="250" height="250" alt="Nathan Lands" />
                   <div className="pt-4 font-cursive">Movie collaboration platform </div>
@@ -90,18 +101,22 @@ const Works: NextPage = () => {
               </Link>
             </div>
             <div className="col-span-1">
-              <div className="pt-24 font-mono font-bold text-2xl antialiased">
-                <img src="/8bit/landing/lore.png" onMouseOver={e => (e.currentTarget.src = "/8bit/landing/lore-normal.png")} onMouseOut={e => (e.currentTarget.src = "/8bit/landing/lore.png")} width="250" height="250" alt="Nathan Lands" />
-                <div className="pt-4 font-cursive">NFT portfolio</div>
-                <div className="font-mono text-atari-blue pr-4 text-[16px]">Written in Swift UI</div>
-              </div>
+              <Link href="/works/nft">
+                <div className="pt-24 font-mono font-bold text-2xl antialiased">
+                  <img src="/8bit/landing/lore.png" onMouseOver={e => (e.currentTarget.src = "/8bit/landing/lore-normal.png")} onMouseOut={e => (e.currentTarget.src = "/8bit/landing/lore.png")} width="250" height="250" alt="Nathan Lands" />
+                  <div className="pt-4 font-cursive">NFT Social Network</div>
+                  <div className="font-mono text-atari-blue pr-4 text-[16px]">Written in Swift UI</div>
+                </div>
+              </Link>
             </div>
             <div className="col-span-1">
-              <div className="pt-24 font-mono font-bold text-2xl antialiased">
-                <img src="/8bit/landing/lore.png" onMouseOver={e => (e.currentTarget.src = "/8bit/landing/lore-normal.png")} onMouseOut={e => (e.currentTarget.src = "/8bit/landing/lore.png")} width="250" height="250" alt="Nathan Lands" />
-                <div className="pt-4 font-cursive">SpaceCraft</div>
-                <div className="font-mono text-atari-blue pr-4 text-[16px]">My hobby game project. Currently written in Rust / WASM. If I ever turn it into a real game I'll probably re-write it in C++ or Jonathan Blow's Jai.</div>
-              </div>
+              <Link href="/works/spacecraft">
+                <div className="pt-24 font-mono font-bold text-2xl antialiased">
+                  <img src="/8bit/landing/lore.png" onMouseOver={e => (e.currentTarget.src = "/8bit/landing/lore-normal.png")} onMouseOut={e => (e.currentTarget.src = "/8bit/landing/lore.png")} width="250" height="250" alt="Nathan Lands" />
+                  <div className="pt-4 font-cursive">SpaceCraft</div>
+                  <div className="font-mono text-atari-blue pr-4 text-[16px]">My hobby game project. Currently written in Rust / WASM. If I ever turn it into a real game I'll probably re-write it in C++ or Jonathan Blow's Jai.</div>
+                </div>
+              </Link>
             </div>
           </div>
 
@@ -112,7 +127,7 @@ const Works: NextPage = () => {
           </div>
           <div className="grid md:grid-cols-3">
             <div className="col-span-1">
-              <Link href="/works/binded">
+              <Link href="/works/tourdehome">
                 <div className="pt-24 font-mono font-bold text-2xl antialiased">
                   <img src="/8bit/landing/lore.png" onMouseOver={e => (e.currentTarget.src = "/8bit/landing/lore-normal.png")} onMouseOut={e => (e.currentTarget.src = "/8bit/landing/lore.png")} width="250" height="250" alt="Nathan Lands" />
                   <div className="pt-4 font-cursive">Tour de Home </div>
@@ -121,11 +136,13 @@ const Works: NextPage = () => {
               </Link>
             </div>
             <div className="col-span-1">
-              <div className="pt-24 font-mono font-bold text-2xl antialiased">
-                <img src="/8bit/landing/lore.png" onMouseOver={e => (e.currentTarget.src = "/8bit/landing/lore-normal.png")} onMouseOut={e => (e.currentTarget.src = "/8bit/landing/lore.png")} width="250" height="250" alt="Nathan Lands" />
-                <div className="pt-4 font-cursive">Ramen Underground</div>
-                <div className="font-mono text-atari-blue pr-4 text-[16px]">Written in Swift UI</div>
-              </div>
+              <Link href="/works/ramenunderground">
+                <div className="pt-24 font-mono font-bold text-2xl antialiased">
+                  <img src="/8bit/landing/lore.png" onMouseOver={e => (e.currentTarget.src = "/8bit/landing/lore-normal.png")} onMouseOut={e => (e.currentTarget.src = "/8bit/landing/lore.png")} width="250" height="250" alt="Nathan Lands" />
+                  <div className="pt-4 font-cursive">Ramen Underground</div>
+                  <div className="font-mono text-atari-blue pr-4 text-[16px]">Written in Swift UI</div>
+                </div>
+              </Link>
             </div>
           </div>
 
@@ -136,7 +153,7 @@ const Works: NextPage = () => {
           </div>
           <div className="grid md:grid-cols-3">
             <div className="col-span-1">
-              <Link href="/works/binded">
+              <Link href="/works/gaikai">
                 <div className="pt-24 font-mono font-bold text-2xl antialiased">
                   <img src="/8bit/landing/lore.png" onMouseOver={e => (e.currentTarget.src = "/8bit/landing/lore-normal.png")} onMouseOut={e => (e.currentTarget.src = "/8bit/landing/lore.png")} width="250" height="250" alt="Nathan Lands" />
                   <div className="pt-4 font-cursive">Gaikai</div>
@@ -145,25 +162,31 @@ const Works: NextPage = () => {
               </Link>
             </div>
             <div className="col-span-1">
-              <div className="pt-24 font-mono font-bold text-2xl antialiased">
-                <img src="/8bit/landing/lore.png" onMouseOver={e => (e.currentTarget.src = "/8bit/landing/lore-normal.png")} onMouseOut={e => (e.currentTarget.src = "/8bit/landing/lore.png")} width="250" height="250" alt="Nathan Lands" />
-                <div className="pt-4 font-cursive">OverWolf</div>
-                <div className="font-mono text-atari-blue pr-4 text-[16px]">A stealth-mode NFT platform. </div>
-              </div>
+              <Link href="/works/overwolf">
+                <div className="pt-24 font-mono font-bold text-2xl antialiased">
+                  <img src="/8bit/landing/lore.png" onMouseOver={e => (e.currentTarget.src = "/8bit/landing/lore-normal.png")} onMouseOut={e => (e.currentTarget.src = "/8bit/landing/lore.png")} width="250" height="250" alt="Nathan Lands" />
+                  <div className="pt-4 font-cursive">OverWolf</div>
+                  <div className="font-mono text-atari-blue pr-4 text-[16px]">A stealth-mode NFT platform. </div>
+                </div>
+              </Link>
             </div>
             <div className="col-span-1">
-              <div className="pt-24 font-mono font-bold text-2xl antialiased">
-                <img src="/8bit/landing/lore.png" onMouseOver={e => (e.currentTarget.src = "/8bit/landing/lore-normal.png")} onMouseOut={e => (e.currentTarget.src = "/8bit/landing/lore.png")} width="250" height="250" alt="Nathan Lands" />
-                <div className="pt-4 font-cursive">20under20</div>
-                <div className="font-mono text-atari-blue pr-4 text-[16px]">The first social bitcoin wallet.</div>
-              </div>
+              <Link href="/works/20under20">
+                <div className="pt-24 font-mono font-bold text-2xl antialiased">
+                  <img src="/8bit/landing/lore.png" onMouseOver={e => (e.currentTarget.src = "/8bit/landing/lore-normal.png")} onMouseOut={e => (e.currentTarget.src = "/8bit/landing/lore.png")} width="250" height="250" alt="Nathan Lands" />
+                  <div className="pt-4 font-cursive">20under20</div>
+                  <div className="font-mono text-atari-blue pr-4 text-[16px]">The first social bitcoin wallet.</div>
+                </div>
+              </Link>
             </div>
             <div className="col-span-1">
-              <div className="pt-24 font-mono font-bold text-2xl antialiased">
-                <img src="/8bit/landing/lore.png" onMouseOver={e => (e.currentTarget.src = "/8bit/landing/lore-normal.png")} onMouseOut={e => (e.currentTarget.src = "/8bit/landing/lore.png")} width="250" height="250" alt="Nathan Lands" />
-                <div className="pt-4 font-cursive">Charity</div>
-                <div className="font-mono text-atari-blue pr-4 text-[16px]">The first social bitcoin wallet.</div>
-              </div>
+              <Link href="/works/charity">
+                <div className="pt-24 font-mono font-bold text-2xl antialiased">
+                  <img src="/8bit/landing/lore.png" onMouseOver={e => (e.currentTarget.src = "/8bit/landing/lore-normal.png")} onMouseOut={e => (e.currentTarget.src = "/8bit/landing/lore.png")} width="250" height="250" alt="Nathan Lands" />
+                  <div className="pt-4 font-cursive">Charity</div>
+                  <div className="font-mono text-atari-blue pr-4 text-[16px]">The first social bitcoin wallet.</div>
+                </div>
+              </Link>
             </div>
 
           </div>

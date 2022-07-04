@@ -28,7 +28,7 @@ const Home: NextPage = () => {
         <title>Home</title>
         <meta
           name="description"
-          content="The NFT Marketplace focused on artists and lore."
+          content="Nathan Lands portfolio"
         />
       </Head>
 

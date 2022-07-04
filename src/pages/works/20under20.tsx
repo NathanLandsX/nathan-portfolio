@@ -3,7 +3,7 @@ import { NextPage } from 'next'
 import Layout from "../../components/Layouts/Content"
 import Contact from '../../components/Contact'
 
-const 20under20: NextPage = () => {
+const tut: NextPage = () => {
   return (
     <div>
       <Head>
@@ -49,4 +49,4 @@ const 20under20: NextPage = () => {
   )
 }
 
-export default 20under20
+export default tut
